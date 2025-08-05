@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',async ()=>{
         try {
             const response = await axios.post('http://localhost:3000/user/add',formValues);
             console.log(`User with name ${response.data.user.name} is added`);
+            window.location.href = 'login.html'
             signupForm.reset();
         } catch (error) {
             console.log('Something went wrong',error);
