@@ -38,3 +38,8 @@
 ::1 - - [05/Aug/2025:21:05:24 +0000] "GET /user/fetch HTTP/1.1" 304 - "http://localhost:3000/signup.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 ::1 - - [05/Aug/2025:21:05:26 +0000] "GET /js/login.js HTTP/1.1" 404 150 "http://localhost:3000/login.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
 ::1 - - [05/Aug/2025:21:05:36 +0000] "GET /user/fetch HTTP/1.1" 304 - "http://localhost:3000/signup.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+::1 - - [05/Aug/2025:21:29:13 +0000] "GET / HTTP/1.1" 200 1441 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+::1 - - [05/Aug/2025:21:29:14 +0000] "GET /user/fetch HTTP/1.1" 200 545 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+::1 - - [05/Aug/2025:21:29:20 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+::1 - - [05/Aug/2025:21:29:41 +0000] "GET /user HTTP/1.1" 404 143 "http://127.0.0.1:5500/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+::1 - - [05/Aug/2025:21:30:47 +0000] "GET /user HTTP/1.1" 404 143 "http://127.0.0.1:5500/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CORS Test</title>
+</head>
+<body>
+  <h1>CORS Test</h1>
+  <button id="fetchBtn">Fetch from 3000</button>
+
+  <script>
+    document.getElementById('fetchBtn').addEventListener('click', () => {
+      fetch('http://localhost:3000/user/fetch')
+        .then(res => {
+            if (!res.ok) throw new Error('HTTP error ' + res.status);
+            return res.json();
+        })
+        .then(data => console.log(data))
+        .catch(err => console.error('Error:', err));
+    });
+  </script>
+</body>
+</html>

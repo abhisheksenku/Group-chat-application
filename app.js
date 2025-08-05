@@ -5,11 +5,16 @@ const port = process.env.PORT || 3000;
 const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
+const cors = require('cors');
 
 const accessLogStream = fs.createWriteStream(
     path.join(__dirname, 'access.log'),
     { flags: 'a' }
 );
+app.use(cors({
+  origin: 'http://127.0.0.1:5500',                 
+  methods: ['GET','POST','PUT','DELETE','PATCH','OPTIONS']
+}));
 
 // Middlewares
 app.use(express.json());
