@@ -13,10 +13,16 @@ document.addEventListener('DOMContentLoaded',async ()=>{
         try {
             const response = await axios.post('http://localhost:3000/user/add',formValues);
             console.log(`User with name ${response.data.user.name} is added`);
+            alert('Registered successfully');
             window.location.href = 'login.html'
             signupForm.reset();
         } catch (error) {
-            console.log('Something went wrong',error);
+            if (error.response && error.response.status === 409) {
+                alert('User already exists');
+            } else {
+                alert('Something went wrong');
+                console.error('Error:', error);
+            }
         }
     });
 });
